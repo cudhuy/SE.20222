@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./admin.css">
+    <title>Teacher</title>
+</head>
+<body>
+     <!-- header section starts  -->
+
+     <header>
+
+        <a href="#" class="logo"><i class="fas fa-child"></i>SeedSchool</a>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#attendance">attendance</a>
+            <a href="#activities">activities</a>
+            <a href="#comments">comments</a>
+            
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+    <section class="teacher background" id="home">
+
+        <h1 class="heading">Welcome to SeedSchool</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/teacher-1.png" alt="">
+                <h3>Pham Hai Dang</h3>
+                <span>teacher</span>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+                <p>I have visited many different places and many schools but Seed School is the most unique and
+                    impressive school I have ever visited.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- body -->
+    <section class="container" id="attendance">
+        <div class="title">
+            Attendance
+        </div>
+        <div class="admin-body">
+            <div class="container">
+                <div class="form-group col-8">
+                    <label for="students">Chọn học sinh </label>
+
+                    <select class="form-control" name="students" id="students">
+                      <option value="students-1">Phạm Hải Dảk</option>
+                      <option value="students-2">Phạm Hải Dảkk</option>
+                      <option value="students-3">Phạm Hải Dảkkk</option>
+                      <option value="students-4">Phạm Hải Dảkkkk</option>
+                    </select>
+                </div>
+                <div class="form-group col-6">
+                    <label>Ảnh học sinh </label>
+
+                    <div class="preview-img-container">
+                        <input id="previewImg" type="file" hidden />
+                        <label class="label-upload" htmlFor="previewImg">Tải ảnh <i
+                                class="fa fa-upload"></i></label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primaty">Save</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- body -->
+    <!-- body2 -->
+    <section class="container" id="activities">
+        <div class="title">
+            Activities
+        </div>
+        <div class="admin-body">
+            <div class="container">
+                <div class="form-group col-8">
+                    <label>
+                       Hoạt động trong ngày
+                    </label>
+                    <input type="email" class="form-control" placeholder="Hoạt động trong ngày" />
+                </div>
+                <div class="form-group col-8">
+                    <label>
+                        Hoạt động trong tuần
+                    </label>
+                    <input type="description" class="form-control" placeholder="Hoạt động trong tuần" />
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primaty">Save</button>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- body 2-->
+
+     <!-- body 3-->
+    <section class="container" id="comments">
+        <div class="title">
+           Comments
+        </div>
+        <div class="admin-body">
+            <div class="container">
+                <div class="form-group col-8">
+                    <label>
+                        Nhận xét trong ngày
+                    </label>
+                    <input type="email" class="form-control" placeholder="Nhận xét trong ngày" />
+                </div>
+                <div class="form-group col-8">
+                    <label>
+                        Nhận xét trong tuần
+                    </label>
+                    <input type="description" class="form-control" placeholder="Nhận xét trong tuần" />
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primaty">Save</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- body 3 -->
+</select>
+<script>
+
+    let menu = document.querySelector('#menu-bars');
+    let navbar = document.querySelector('.navbar');
+
+    menu.addEventListener('click', () => {
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('nav-toggle');
+    });
+
+    window.onscroll = () => {
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('nav-toggle');
+    }
+
+</script>
+</body>
+</html>

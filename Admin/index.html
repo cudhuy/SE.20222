@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeedSchool</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./admin.css">
+    <!-- <link rel="stylesheet" href="./timetable.css"> -->
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo"><i class="fas fa-child"></i>SeedSchool</a>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#menu">menu</a>
+            <a href="#activity">Activity</a>
+            <a href="#fee">fee</a>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="teacher background" id="home">
+
+        <h1 class="heading">Welcome to SeedSchool</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/teacher-1.png" alt="">
+                <h3>Pham Hai Dang</h3>
+                <span>teacher</span>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+                <p>I have visited many different places and many schools but Seed School is the most unique and
+                    impressive school I have ever visited.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container" id="menu">
+        <div class="title">
+            Menu
+        </div>
+        <div class="admin-body">
+            <div class="container">
+                <div class="row">
+                    <div class="form-group col-8">
+                        <label>
+                            Bữa sáng
+                        </label>
+                        <input type="email" class="form-control" placeholder="Bữa sáng" />
+                    </div>
+                    <div class="form-group col-8">
+                        <label>
+                            Bữa trưa
+                        </label>
+                        <input type="email" class="form-control" placeholder="Bữa trưa" />
+                    </div>
+                    <div class="form-group col-8">
+                        <label>
+                            Bữa tối
+                        </label>
+                        <input type="email" class="form-control" placeholder="Bữa tối" />
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primaty">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="activity">
+        <div class="title">
+            Activity
+        </div>
+        <div class="admin-body">
+            <div class="container">
+                <div class="row">
+                    <div class="form-group col-8">
+                        <label>
+                            Name
+                        </label>
+                        <input type="email" class="form-control" placeholder="Name" />
+                    </div>
+                    <div class="form-group col-8">
+                        <label>
+                            Description
+                        </label>
+                        <input type="description" class="form-control" placeholder="Description" />
+                    </div>
+                    <div class="form-group col-6">
+                        <label>
+                            Image
+                        </label>
+                        <div class="preview-img-container">
+                            <input id="previewImg" type="file" hidden />
+                            <label class="label-upload" htmlFor="previewImg">Tải ảnh <i
+                                    class="fa fa-upload"></i></label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primaty">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="fee">
+        <div class="title">
+            Fee
+        </div>
+        <div class="admin-body">
+            <div class="container">
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label>
+                            Name
+                        </label>
+                        <input type="email" class="form-control" placeholder="Name" />
+                    </div>
+                    <div class="form-group col-6">
+                        <label>
+                            Price
+                        </label>
+                        <input type="email" class="form-control" placeholder="Price" />
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primaty">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        created by <span> SeedSchool </span> | all rights reserved!
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('nav-toggle');
+        });
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('nav-toggle');
+        }
+
+    </script>
+
+</body>
+
+</html>

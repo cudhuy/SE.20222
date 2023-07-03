@@ -1,0 +1,14 @@
+.container{
+    font-size: 20px;
+}
+.label-upload{
+    cursor: pointer;
+    background-color: #ddd;
+    font-size: 15px;
+}
+.btn{
+    font-size: 15px;
+}
+.container .title{
+    margin-bottom: 15px;
+}
